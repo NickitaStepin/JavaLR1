@@ -26,13 +26,12 @@ git add .
 # Создание первого коммита
 git commit -m "Initial commit: Passport project"
 
-# Создание репозитория на GitLab (выполнить вручную)
-# 1. Зайти на https://gitlab.com
-# 2. Создать новый проект "passport-project"
-# 3. Добавить remote origin:
-git remote add origin https://gitlab.com/username/passport-project.git
+# Создание репозитория на GitHub (выполнено)
+# 1. Создан репозиторий: https://github.com/NickitaStepin/JavaLR1
+# 2. Подключение к удаленному репозиторию:
+git remote add origin https://github.com/NickitaStepin/JavaLR1.git
 
-# Отправка кода на GitLab
+# Отправка кода на GitHub
 git branch -M main
 git push -u origin main
 
