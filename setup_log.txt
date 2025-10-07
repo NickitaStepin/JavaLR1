@@ -1,0 +1,54 @@
+=== ЛОГ НАСТРОЙКИ ПРОЕКТА PASSPORT ===
+Дата: 2025-10-07
+
+=== 1. СОЗДАНИЕ ПРОЕКТА ===
+- Создан файл Passport.java с выводом ФИО, группы и информации о себе
+- Проект скомпилирован командой: javac Passport.java
+- Проект запущен командой: java Passport
+
+=== 2. НАСТРОЙКА ПЕРЕМЕННЫХ ОКРУЖЕНИЯ ===
+- Найдена установка Java: C:\Users\nikst\.jdks\openjdk-23.0.2
+- Установлена переменная JAVA_HOME: C:\Users\nikst\.jdks\openjdk-23.0.2
+- Обновлена переменная PATH: %JAVA_HOME%\bin;%PATH%
+- Создан файл environment_setup.bat для автоматической настройки
+
+=== 3. КОМАНДЫ GIT ===
+# Инициализация репозитория
+git init
+
+# Настройка пользователя
+git config --global user.name "Student"
+git config --global user.email "student@example.com"
+
+# Добавление файлов в индекс
+git add .
+
+# Создание первого коммита
+git commit -m "Initial commit: Passport project"
+
+# Создание репозитория на GitLab (выполнить вручную)
+# 1. Зайти на https://gitlab.com
+# 2. Создать новый проект "passport-project"
+# 3. Добавить remote origin:
+git remote add origin https://gitlab.com/username/passport-project.git
+
+# Отправка кода на GitLab
+git branch -M main
+git push -u origin main
+
+=== 4. СТРУКТУРА ПРОЕКТА ===
+lrjava/
+├── Passport.java          # Основной файл программы
+├── Passport.class         # Скомпилированный класс
+├── environment_setup.bat  # Скрипт настройки окружения
+└── setup_log.txt         # Этот файл с логом команд
+
+=== 5. КОМАНДЫ ДЛЯ КОМПИЛЯЦИИ И ЗАПУСКА ===
+# Компиляция
+javac Passport.java
+
+# Запуск
+java Passport
+
+# Настройка окружения (Windows)
+environment_setup.bat
