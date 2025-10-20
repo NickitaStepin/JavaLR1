@@ -1,0 +1,72 @@
+=== ЛОГ НАСТРОЙКИ ПРОЕКТА PASSPORT ===
+Дата: 2025-10-07
+
+=== 1. СОЗДАНИЕ ПРОЕКТА ===
+- Создан файл Passport.java с выводом ФИО, группы и информации о себе
+- Студент: Степин Никита Дмитриевич
+- Группа: ИБ-23-1
+- Специальность: Информационная безопасность
+- Университет: Приазовский Государственный Технический университет
+- Проект скомпилирован командой: javac Passport.java
+- Проект запущен командой: java Passport
+
+=== 2. НАСТРОЙКА ПЕРЕМЕННЫХ ОКРУЖЕНИЯ ===
+- Найдена установка Java: C:\Users\nikst\.jdks\openjdk-23.0.2
+- Установлена переменная JAVA_HOME: C:\Users\nikst\.jdks\openjdk-23.0.2
+- Обновлена переменная PATH: %JAVA_HOME%\bin;%PATH%
+- Создан файл environment_setup.bat для автоматической настройки
+
+=== 3. КОМАНДЫ GIT ===
+# Инициализация репозитория
+git init
+
+# Настройка пользователя
+git config --global user.name "Student"
+git config --global user.email "student@example.com"
+
+# Добавление файлов в индекс
+git add .
+
+# Создание первого коммита
+git commit -m "Initial commit: Passport project"
+
+# Создание репозитория на GitHub (выполнено)
+# 1. Создан репозиторий: https://github.com/NickitaStepin/JavaLR1
+# 2. Подключение к удаленному репозиторию:
+git remote add origin https://github.com/NickitaStepin/JavaLR1.git
+
+# Отправка кода на GitHub
+git branch -M main
+git push -u origin main
+
+# Дополнительные команды Git
+git add .gitignore
+git commit -m "Add .gitignore for Java project"
+
+git add README.md
+git commit -m "Add README.md documentation"
+
+# Просмотр истории коммитов
+git log --oneline
+
+# Просмотр статуса репозитория
+git status
+
+=== 4. СТРУКТУРА ПРОЕКТА ===
+lrjava/
+├── Passport.java          # Основной файл программы (Степин Н.Д., ИБ-23-1)
+├── Passport.class         # Скомпилированный класс
+├── environment_setup.bat  # Скрипт настройки окружения
+├── README.md             # Документация проекта
+├── .gitignore            # Исключения для Git
+└── setup_log.txt         # Этот файл с логом команд
+
+=== 5. КОМАНДЫ ДЛЯ КОМПИЛЯЦИИ И ЗАПУСКА ===
+# Компиляция
+javac Passport.java
+
+# Запуск
+java Passport
+
+# Настройка окружения (Windows)
+environment_setup.bat
